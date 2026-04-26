@@ -1,0 +1,33 @@
+{
+  "scenes": {
+    "贫营养湖泊": {
+      "I": 0.05,
+      "epsilon": 0.02,
+      "KN": 0.5,
+      "initialN": 5.0,
+      "seasonAmplitude": 0.1
+    },
+    "温带草原": {
+      "I": 1.0,
+      "epsilon": 0.15,
+      "KN": 2.0,
+      "initialN": 15.0,
+      "seasonAmplitude": 0.3
+    },
+    "热带雨林": {
+      "I": 0.2,
+      "epsilon": 0.4,
+      "KN": 1.0,
+      "initialN": 10.0,
+      "seasonAmplitude": 0.05
+    },
+    "富营养河口": {
+      "I": 3.0,
+      "epsilon": 0.25,
+      "KN": 5.0,
+      "initialN": 30.0,
+      "seasonAmplitude": 0.2
+    }
+  },
+  "default": "温带草原"
+}
