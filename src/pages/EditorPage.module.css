@@ -73,6 +73,9 @@
   left: 0;
   right: 0;
   z-index: 10;
+  /* 适配 iOS 安全区域，防止被底部横条遮挡 */
+  padding-bottom: env(safe-area-inset-bottom, 8px);
+  background: rgba(255,255,255,0.95); /* 加背景避免透明 */
 }
 
 .presetList {
@@ -82,6 +85,7 @@
   background: rgba(255,255,255,0.95);
   border-top: 1px solid #ddd;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* 顺滑滚动 */
 }
 
 .presetItem {
@@ -108,6 +112,8 @@
   background: rgba(240,240,240,0.95);
   border-top: 1px solid #ccc;
   justify-content: center;
+  /* 同样适配安全区 */
+  padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
 }
 
 .catBtn, .activeCat {
